@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c1988e2-2c9c-4f44-b69f-ecfc9dd5442f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/templates/blog/add_comment_to_post.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="$PROJECT_DIR$/blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/forms.py" afterPath="$PROJECT_DIR$/blog/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/blog.css" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
     </list>
     <ignored path="ProjetBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="post_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
+            <state vertical-scroll-proportion="0.3219697">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
@@ -87,21 +70,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61174244">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="104" selection-start-line="9" selection-start-column="104" selection-end-line="9" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <file leaf-file-name="post_draft_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_draft_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -129,6 +122,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.153846">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -147,22 +150,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_draft_list.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_draft_list.html" />
         <option value="$PROJECT_DIR$/blog/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/ProjetBlog/urls.py" />
         <option value="$PROJECT_DIR$/ProjetBlog/settings.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/add_comment_to_post.html" />
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
         <option value="$PROJECT_DIR$/blog/static/css/blog.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
       </list>
     </option>
   </component>
@@ -172,8 +175,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="280" />
-    <option name="y" value="79" />
+    <option name="x" value="218" />
+    <option name="y" value="10" />
     <option name="width" value="1002" />
     <option name="height" value="692" />
   </component>
@@ -601,7 +604,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="79" width="1002" height="692" extended-state="0" />
+    <frame x="218" y="10" width="1002" height="692" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2545639" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -748,34 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_draft_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3219697">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.80492425">
           <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4375">
-          <caret line="15" column="148" selection-start-line="15" selection-start-column="148" selection-end-line="15" selection-end-column="148" />
           <folding />
         </state>
       </provider>
@@ -858,14 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -894,10 +865,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.153846">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61174244">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="104" selection-start-line="9" selection-start-column="104" selection-end-line="9" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_draft_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3219697">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
