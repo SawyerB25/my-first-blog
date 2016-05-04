@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 
 class Post(models.Model):
@@ -18,5 +19,10 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def __unicode__(self):
+        return '%s %s %s %s %s' % (self.title, self.author, self.text, self.created_date, self.published_date)
+
+    def get_absolute_url(self):
+        return "/post/%i/" % self.id
 
 

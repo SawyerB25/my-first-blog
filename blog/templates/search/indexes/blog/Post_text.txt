@@ -1,0 +1,7 @@
+{{ object.title }}
+{{ object.author }}
+{{ object.text }}
+{{ object.created_date}}
+{{ object.published_date }}
+{{ object.user.get_full_name }}
+{{ object.body }}
