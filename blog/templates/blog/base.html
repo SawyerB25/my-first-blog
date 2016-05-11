@@ -1,24 +1,41 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
 
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
-                <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Se déconnecter</a>)</small></p>
+                <a href="{% url 'post_new' %}" class="top-menu" title="Ajouter un article"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu" title="Articles non publiés"><span class="glyphicon glyphicon-edit"></span></a>
+                <p class="top-menu">Coucou {{ user.username }}!<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Se déconnecter ?</a>)</small></p>
             {% else %}
-                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock">Connexion</span></a>
             {% endif %}
-            <h1><a href="/">Brice VERRIER Blog</a></h1>
+            <h1><a href="/">Projet Blog</a></h1>
         </div>
+
+        <div id="blog-description-wrapper">
+            <div id="blog-description">
+                <div id="Navigation">
+                    <ul>
+                        <li><a href="/" class="active">Blog</a></li>
+                        <li><a href="/search">Search</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="/admin">Administration</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">

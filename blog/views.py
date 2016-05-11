@@ -5,6 +5,14 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
 
+from django.core.mail import send_mail
+from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render
+
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect
+
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -19,7 +27,7 @@ def post_detail(request, pk):
 @login_required
 def post_new(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -78,3 +86,27 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
+
+
+def contact(request):
+    errors = []
+    if request.method == 'POST':
+        if not request.POST.get('sujet', ''):
+            errors.append('Entrer un sujet.')
+        if not request.POST.get('message', ''):
+            errors.append('Entrer un message.')
+        if request.POST.get('email') and '@' not in request.POST['email']:
+            errors.append('Entrer une adresse mail correcte.')
+        if not errors:
+            try:
+                send_mail(
+                    request.POST['sujet'],
+                    request.POST['message'],
+                    request.POST.get('email', 'briceverrier@hotmail.fr'),
+                    ['briceverrier@hotmail.fr'],
+                )
+                return HttpResponse('Message envoye avec succes')
+            except Exception, err:
+                return HttpResponse(str(err))
+    return render(request, 'blog/contact_form.html',
+                  {'errors': errors})
